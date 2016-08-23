@@ -14,6 +14,7 @@
  */
 
 import Accordion from "../components/Accordion.vue";
+import Badge from "../components/Badge.vue";
 import Pane from "../components/Pane.vue";
 import PaneTitle from "../components/Pane-Title.vue";
 import PaneContent from "../components/Pane-Content.vue";
@@ -23,6 +24,7 @@ new Vue({
 
     components: {
         Accordion,
+        Badge,
         Pane, PaneTitle, PaneContent,
     }
 });
