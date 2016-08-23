@@ -1,3 +1,13 @@
+[Default Components](https://github.com/sirthxalot/vue-foundation-components/milestone/1)
+------------------------------------------------------------------------------------- 
+
+> v.1.1.2-0002
+
+* **Feature**: Implement Accordion component.
+* **Minor**: Add sub components related to the accordion.
+* **Minor**: Removed Vue.js from common script and require it from CDN.
+
+
 [Initial Commit](https://github.com/sirthxalot/vue-foundation-components/issues/1)
 ------------------------------------------------------------------------------------- 
 

@@ -13,12 +13,16 @@
  * @copyright (c) 2016, Alexander Bösch - All rights reserved.
  */
 
-import Dummy from "../components/Dummy.vue";
+import Accordion from "../components/Accordion.vue";
+import Pane from "../components/Pane.vue";
+import PaneTitle from "../components/Pane-Title.vue";
+import PaneContent from "../components/Pane-Content.vue";
 
 new Vue({
     el: 'body',
 
     components: {
-        Dummy
+        Accordion,
+        Pane, PaneTitle, PaneContent,
     }
 });

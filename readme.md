@@ -79,8 +79,14 @@ website and you are done.
 
 	...
 	
+	<!-- Load Vue and Vue Components -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
+	<script src="js/foundation.components.min.js"></script>
+	<!-- Load Vue and Vue Components -->
+	
+	<!-- Load jQuery, What Input, Motion-UI, Foundation for Sites -->
 	<script src="js/common.js"></script>
-	<script src="js/foundation.components.js"></script>
+	<!-- Load jQuery, What Input, Motion-UI, Foundation for Sites -->
 </body>
 </html>
 ```
@@ -100,7 +106,6 @@ The `common.js` javascript, which could be found at: `dist/js/common.js` is a me
 What Input, Motion UI and the Foundation for Sites javascript.
 
 * jQuery (v.1.12.4)
-* Vue.js
 * What Input
 * Motion UI (javascript)
 * Foundation for Sites (javascript)

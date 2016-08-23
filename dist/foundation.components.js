@@ -10539,54 +10539,122 @@ setTimeout(function () {
 module.exports = Vue;
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"_process":1}],4:[function(require,module,exports){
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
 exports.default = {
-    props: []
+    props: ['closable', 'multiexpand']
 };
 if (module.exports.__esModule) module.exports = module.exports.default
-;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<h1><slot></slot></h1>\n"
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<ul class=\"accordion\" data-accordion=\"\" :data-multi-expand=\"multiexpand\" :data-allow-all-closed=\"closable\">\n    <slot></slot>\n</ul>\n"
 if (module.hot) {(function () {  module.hot.accept()
   var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
   if (!hotAPI.compatible) return
   if (!module.hot.data) {
-    hotAPI.createRecord("_v-47fdb0ba", module.exports)
+    hotAPI.createRecord("_v-c070574c", module.exports)
   } else {
-    hotAPI.update("_v-47fdb0ba", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+    hotAPI.update("_v-c070574c", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
   }
 })()}
 },{"vue":3,"vue-hot-reload-api":2}],5:[function(require,module,exports){
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div class=\"accordion-content\" data-tab-content=\"\">\n    <slot></slot>\n</div>\n"
+if (module.hot) {(function () {  module.hot.accept()
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  if (!module.hot.data) {
+    hotAPI.createRecord("_v-5ea878d2", module.exports)
+  } else {
+    hotAPI.update("_v-5ea878d2", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+  }
+})()}
+},{"vue":3,"vue-hot-reload-api":2}],6:[function(require,module,exports){
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<a href=\"#\" class=\"accordion-title\">\n    <slot></slot>\n</a>\n"
+if (module.hot) {(function () {  module.hot.accept()
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  if (!module.hot.data) {
+    hotAPI.createRecord("_v-27c7fb71", module.exports)
+  } else {
+    hotAPI.update("_v-27c7fb71", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+  }
+})()}
+},{"vue":3,"vue-hot-reload-api":2}],7:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
+    props: ['active'],
+    computed: {
+        isActive: function isActive() {
+            if (this.active == "") {
+                return 'is-active';
+            }
+            return "";
+        }
+    }
+};
+if (module.exports.__esModule) module.exports = module.exports.default
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<li class=\"accordion-item\" :class=\"isActive\" data-accordion-item=\"\">\n    <slot></slot>\n</li>\n"
+if (module.hot) {(function () {  module.hot.accept()
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  if (!module.hot.data) {
+    hotAPI.createRecord("_v-90760574", module.exports)
+  } else {
+    hotAPI.update("_v-90760574", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+  }
+})()}
+},{"vue":3,"vue-hot-reload-api":2}],8:[function(require,module,exports){
 "use strict";
 
-var _Dummy = require("../components/Dummy.vue");
+var _Accordion = require("../components/Accordion.vue");
 
-var _Dummy2 = _interopRequireDefault(_Dummy);
+var _Accordion2 = _interopRequireDefault(_Accordion);
+
+var _Pane = require("../components/Pane.vue");
+
+var _Pane2 = _interopRequireDefault(_Pane);
+
+var _PaneTitle = require("../components/Pane-Title.vue");
+
+var _PaneTitle2 = _interopRequireDefault(_PaneTitle);
+
+var _PaneContent = require("../components/Pane-Content.vue");
+
+var _PaneContent2 = _interopRequireDefault(_PaneContent);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * Vue Components
+ * ========================================================================
+ *
+ * This file contain all vue components we had generated for this project.
+ * Here we are going to define which component should be loaded and what
+ * kind of data they will receive.
+ *
+ * @link https://vuejs.org/guide/components.html
+ *
+ * @package   Src\Js
+ * @author    Alexander Bösch - <sirthxalot.dev@gmail.com>
+ * @copyright (c) 2016, Alexander Bösch - All rights reserved.
+ */
 
 new Vue({
     el: 'body',
 
     components: {
-        Dummy: _Dummy2.default
+        Accordion: _Accordion2.default,
+        Pane: _Pane2.default, PaneTitle: _PaneTitle2.default, PaneContent: _PaneContent2.default
     }
-}); /**
-     * Vue Components
-     * ========================================================================
-     *
-     * This file contain all vue components we had generated for this project.
-     * Here we are going to define which component should be loaded and what
-     * kind of data they will receive.
-     *
-     * @link https://vuejs.org/guide/components.html
-     *
-     * @package   Src\Js
-     * @author    Alexander Bösch - <sirthxalot.dev@gmail.com>
-     * @copyright (c) 2016, Alexander Bösch - All rights reserved.
-     */
+});
 
-},{"../components/Dummy.vue":4}]},{},[5]);
+},{"../components/Accordion.vue":4,"../components/Pane-Content.vue":5,"../components/Pane-Title.vue":6,"../components/Pane.vue":7}]},{},[8]);

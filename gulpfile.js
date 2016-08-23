@@ -33,11 +33,9 @@ var root = '../../';
 // Type in .min when running Gulp on production and
 // change sourcemaps to true
 
-// var min = '.min';
-var min = '';
+var min = '.min';
+elixir.config.sourcemaps = true;
 
-//elixir.config.sourcemaps = false;
-elixir.config.sourcemaps = false;
 
 // Gulp Task
 elixir(function(mix) {
@@ -47,7 +45,6 @@ elixir(function(mix) {
 
     // Merge Common Javascript
     mix.scripts([
-        root + 'node_modules/vue/dist/vue.js',
         root + 'node_modules/jquery/dist/jquery.js',
         root + 'node_modules/what-input/dist/what-input.js',
         root + 'node_modules/motion-ui/motion-ui.js',

@@ -14,28 +14,34 @@
 </head>
 <body>
 
-<dummy>This should be an H1</dummy>
+<accordion closable="true" multiExpand="true">
+    <pane active="">
+        <pane-title>Accordion Title</pane-title>
+        <pane-content>
+            You content goes here ...
+        </pane-content>
+    </pane>
+    <pane>
+        <pane-title>Accordion Title 2</pane-title>
+        <pane-content>
+            You content goes here 2 ...
+        </pane-content>
+    </pane>
+    <pane active="">
+        <pane-title>Accordion Title 3</pane-title>
+        <pane-content>
+            You content goes here 3 ...
+        </pane-content>
+    </pane>
+</accordion>
 
-<!-- Simple Accordion Example Plain HTML -->
-<ul class="accordion" data-accordion>
-    <li class="accordion-item is-active" data-accordion-item>
-        <a href="#" class="accordion-title">Accordion 1</a>
-        <div class="accordion-content" data-tab-content>
-            I would start in the open state, due to using the `is-active` state class.
-        </div>
-    </li>
-    <li class="accordion-item" data-accordion-item>
-        <a href="#" class="accordion-title">Accordion 1</a>
-        <div class="accordion-content" data-tab-content>
-            I would start in the open state, due to using the `is-active` state class.
-        </div>
-    </li>
-</ul>
-<!-- Simple Accordion Example Plain HTML -->
-
-<!-- Load Javascript Dependencies -->
-<script src="js/common.min.js"></script>
+<!-- Load Vue and Vue Components -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
 <script src="js/foundation.components.min.js"></script>
-<!-- Load Javascript Dependencies -->
+<!-- Load Vue and Vue Components -->
+
+<!-- Load jQuery, What Input, Motion-UI, Foundation for Sites -->
+<script src="js/common.min.js"></script>
+<!-- Load jQuery, What Input, Motion-UI, Foundation for Sites -->
 </body>
 </html>
