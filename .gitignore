@@ -1,0 +1,14 @@
+#==========================================================================
+# Git-Ignore
+#
+# @see https://git-scm.com/docs/gitignore
+#==========================================================================
+
+.idea/
+_site/
+node_modules/
+
+.jekyll-metadata
+.sass-cache
+Gemfile.lock
+npm-debug.log
