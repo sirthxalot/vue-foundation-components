@@ -1,11 +1,11 @@
 <template>
-    <ul class="accordion" data-accordion="" :data-multi-expand="multiexpand" :data-allow-all-closed="closable">
+    <ul class="accordion" data-accordion="" :data-multi-expand="multiexpand" :data-allow-all-closed="allclosable">
         <slot></slot>
     </ul>
 </template>
 
 <script>
 export default {
-    props: ['closable', 'multiexpand']
+    props: ['allclosable', 'multiexpand']
 };
 </script>

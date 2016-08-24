@@ -12,32 +12,40 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css" type="text/css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.2/motion-ui.min.css" type="text/css" rel="stylesheet" />
     <!-- Link to Stylesheets -->
+
+    <!-- Internal Style -->
+    <style>
+        .info {
+            color: #ffffff;
+            background-color: #346caa;
+        }
+    </style>
+    <!-- Internal Style -->
 </head>
 <body>
 
 
-<!-- Accordion Component Usage -->
-<accordion allClosable="true" multiExpand="true">
-    <pane active="">
-        <pane-title>Accordion Title</pane-title>
-        <pane-content>
-            You content goes here ...
-        </pane-content>
-    </pane>
-    <pane>
-        <pane-title>Accordion Title 2</pane-title>
-        <pane-content>
-            You content goes here 2 ...
-        </pane-content>
-    </pane>
-    <pane active="">
-        <pane-title>Accordion Title 3</pane-title>
-        <pane-content>
-            You content goes here 3 ...
-        </pane-content>
-    </pane>
-</accordion>
-<!-- Accordion Component Usage -->
+<!-- Callout Component Usage -->
+<callout>A default callout.</callout>
+<callout type="secondary">I am an info.</callout>
+<callout type="info">I am an info.</callout>
+<callout type="alert">I am an alert.</callout>
+<callout type="warning">I am a warning.</callout>
+<callout type="success">I am a success.</callout>
+<callout size="small">I am a small callout.</callout>
+<callout>I am a regular callout.</callout>
+<callout size="large">I am a large callout.</callout>
+<callout closable="true">I am a closable callout.</callout>
+<callout closable="true">I am a closable callout.</callout>
+<callout closable="true">I am a closable callout.</callout>
+
+<message>Another Message now using the message-tag.</message>
+<info>Another Info Message now using the info-tag.</info>
+<warning>Another Info Message now using the warning-tag.</warning>
+<alert>Another Info Message now using the alert-tag.</alert>
+<success>Another Info Message now using the success-tag.</success>
+<!-- Callout Component Usage -->
+
 
 <!-- Load Vue and Vue Components -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
