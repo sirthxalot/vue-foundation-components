@@ -59,9 +59,9 @@ you will need, but it has it requirements. Vue Foundation Components will need t
 * **You have to implement [Motion UI](http://zurb.com/playground/motion-ui)** into your website **before loading** the **components**.
 * **You have to implement [Foundation Sites](http://foundation.zurb.com/sites/docs/pagination.html)** into your website **before loading the components**.
 
-All these files are available at the `dist/` directory so you do not have to download them manually. If you already 
-integrate them into your website, than great just grab and implement the `dist/foundation.components.js` file into your 
-website and you are done.
+I assume that you already implemented these requirements within your web project, before you start using the Vue Foundation 
+Components. Next I would like to show you the typical starter template for Vue Foundation Components:
+
 
 ### HTML Starter Template
 
@@ -69,11 +69,19 @@ website and you are done.
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
-	<meta charset="utf-8" />
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Required Meta Tagging for Foundation Sites -->
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Required Meta Tagging for Foundation Sites -->
+    
 	<title>Document Title</title>
-	<link rel="stylesheet" href="css/common.css" />
+
+    <!-- Link to Stylesheets -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css" type="text/css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.2/motion-ui.min.css" type="text/css" rel="stylesheet" />
+    <!-- Link to Stylesheets -->
+
 </head>
 <body>
 
@@ -85,36 +93,26 @@ website and you are done.
 	<!-- Load Vue and Vue Components -->
 	
 	<!-- Load jQuery, What Input, Motion-UI, Foundation for Sites -->
-	<script src="js/common.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+			integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+			crossorigin="anonymous"
+	></script>
+	<script src="https://cdn.jsdelivr.net/what-input/2.1.1/what-input.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.2/motion-ui.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.js"></script>
+	<script>
+		// Initialize Foundation Components
+		$(document).foundation();
+	</script>
 	<!-- Load jQuery, What Input, Motion-UI, Foundation for Sites -->
 </body>
 </html>
 ```
 
-### common.css
-
-First I would like to mention the link in the head of our HTML Starter Template. Here we are going to link to the 
-`common.css` stylesheet, which could be found at: `dist/css/common.css`. This stylesheet contain the Foundation for 
-Sites and the Motion UI styles:
-
-* Stylesheet Motion UI
-* Stylesheet Foundation for Sites
-
-### common.js
-
-The `common.js` javascript, which could be found at: `dist/js/common.js` is a merged javascript of jQuery, Vue.js, 
-What Input, Motion UI and the Foundation for Sites javascript.
-
-* jQuery (v.1.12.4)
-* What Input
-* Motion UI (javascript)
-* Foundation for Sites (javascript)
-
-### foundation.components.js
-
-Last but not least the most important javascript (`foundation.components.js`), which could be found at: `dist/foundation.components.js`. 
-This file contain the components and will be the only thing you have to implement when you already setup Foundation 
-for Sites, Motion UI and Vue.js in your web project.
+This is how the typical starter template will look like for using Vue Foundation Components. As you can see I have solved 
+most of the requirements using CDN links. You can copy this starter template and start using the components after grabbing 
+the `dist/foundation.components.min.js` file and put it into the `js` directory. That's it Folks - You should be ready to 
+go!
 
 
 ## Need Further Help

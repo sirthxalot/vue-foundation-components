@@ -1,22 +1,8 @@
 {
-  "name": "@sirthxalot/vue-foundation-components",
-  "version": "1.0.0",
-  "main": "dist/foundation.components.js",
-  "description": "A collection of Vue components based on the Foundation for Sites 6 frontend framework.",
-  "author": "Alexander Bösch <sirthxalot.dev@gmail.com>",
-  "homepage": "https://github.com/sirthxalot/vue-foundation-components/",
   "private": true,
-  "license": "MIT",
   "scripts": {
     "prod": "gulp --production",
     "dev":  "gulp watch"
-  },
-  "dependencies": {
-    "foundation-sites":       "^6.2.3",
-    "jquery":                 "1.12.4",
-    "motion-ui":              "^1.2.2",
-    "vue":                    "^1.0.26",
-    "what-input":             "^3.0.0"
   },
   "devDependencies": {
     "gulp":                   "^3.9.1",

@@ -10539,6 +10539,54 @@ setTimeout(function () {
 module.exports = Vue;
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{"_process":1}],4:[function(require,module,exports){
+"use strict";
+
+var _Accordion = require("./components/Accordion.vue");
+
+var _Accordion2 = _interopRequireDefault(_Accordion);
+
+var _Badge = require("./components/Badge.vue");
+
+var _Badge2 = _interopRequireDefault(_Badge);
+
+var _Pane = require("./components/Pane.vue");
+
+var _Pane2 = _interopRequireDefault(_Pane);
+
+var _PaneTitle = require("./components/Pane-Title.vue");
+
+var _PaneTitle2 = _interopRequireDefault(_PaneTitle);
+
+var _PaneContent = require("./components/Pane-Content.vue");
+
+var _PaneContent2 = _interopRequireDefault(_PaneContent);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+new Vue({
+    el: 'body',
+
+    components: {
+        Accordion: _Accordion2.default,
+        Badge: _Badge2.default,
+        Pane: _Pane2.default, PaneTitle: _PaneTitle2.default, PaneContent: _PaneContent2.default
+    }
+}); /**
+     * Vue Components
+     * ========================================================================
+     *
+     * This file contain all vue components we had generated for this project.
+     * Here we are going to define which component should be loaded and what
+     * kind of data they will receive.
+     *
+     * @link https://vuejs.org/guide/components.html
+     *
+     * @package   Src\Js
+     * @author    Alexander Bösch - <sirthxalot.dev@gmail.com>
+     * @copyright (c) 2016, Alexander Bösch - All rights reserved.
+     */
+
+},{"./components/Accordion.vue":5,"./components/Badge.vue":6,"./components/Pane-Content.vue":7,"./components/Pane-Title.vue":8,"./components/Pane.vue":9}],5:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -10559,7 +10607,28 @@ if (module.hot) {(function () {  module.hot.accept()
     hotAPI.update("_v-c070574c", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
   }
 })()}
-},{"vue":3,"vue-hot-reload-api":2}],5:[function(require,module,exports){
+},{"vue":3,"vue-hot-reload-api":2}],6:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
+    props: ['color']
+};
+if (module.exports.__esModule) module.exports = module.exports.default
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<span class=\"badge\" :class=\"color\">\n    <slot></slot>\n</span>\n"
+if (module.hot) {(function () {  module.hot.accept()
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  if (!module.hot.data) {
+    hotAPI.createRecord("_v-1a6e5235", module.exports)
+  } else {
+    hotAPI.update("_v-1a6e5235", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+  }
+})()}
+},{"vue":3,"vue-hot-reload-api":2}],7:[function(require,module,exports){
 ;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div class=\"accordion-content\" data-tab-content=\"\">\n    <slot></slot>\n</div>\n"
 if (module.hot) {(function () {  module.hot.accept()
   var hotAPI = require("vue-hot-reload-api")
@@ -10571,7 +10640,7 @@ if (module.hot) {(function () {  module.hot.accept()
     hotAPI.update("_v-5ea878d2", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
   }
 })()}
-},{"vue":3,"vue-hot-reload-api":2}],6:[function(require,module,exports){
+},{"vue":3,"vue-hot-reload-api":2}],8:[function(require,module,exports){
 ;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<a href=\"#\" class=\"accordion-title\">\n    <slot></slot>\n</a>\n"
 if (module.hot) {(function () {  module.hot.accept()
   var hotAPI = require("vue-hot-reload-api")
@@ -10583,7 +10652,7 @@ if (module.hot) {(function () {  module.hot.accept()
     hotAPI.update("_v-27c7fb71", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
   }
 })()}
-},{"vue":3,"vue-hot-reload-api":2}],7:[function(require,module,exports){
+},{"vue":3,"vue-hot-reload-api":2}],9:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -10612,49 +10681,4 @@ if (module.hot) {(function () {  module.hot.accept()
     hotAPI.update("_v-90760574", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
   }
 })()}
-},{"vue":3,"vue-hot-reload-api":2}],8:[function(require,module,exports){
-"use strict";
-
-var _Accordion = require("../components/Accordion.vue");
-
-var _Accordion2 = _interopRequireDefault(_Accordion);
-
-var _Pane = require("../components/Pane.vue");
-
-var _Pane2 = _interopRequireDefault(_Pane);
-
-var _PaneTitle = require("../components/Pane-Title.vue");
-
-var _PaneTitle2 = _interopRequireDefault(_PaneTitle);
-
-var _PaneContent = require("../components/Pane-Content.vue");
-
-var _PaneContent2 = _interopRequireDefault(_PaneContent);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-/**
- * Vue Components
- * ========================================================================
- *
- * This file contain all vue components we had generated for this project.
- * Here we are going to define which component should be loaded and what
- * kind of data they will receive.
- *
- * @link https://vuejs.org/guide/components.html
- *
- * @package   Src\Js
- * @author    Alexander Bösch - <sirthxalot.dev@gmail.com>
- * @copyright (c) 2016, Alexander Bösch - All rights reserved.
- */
-
-new Vue({
-    el: 'body',
-
-    components: {
-        Accordion: _Accordion2.default,
-        Pane: _Pane2.default, PaneTitle: _PaneTitle2.default, PaneContent: _PaneContent2.default
-    }
-});
-
-},{"../components/Accordion.vue":4,"../components/Pane-Content.vue":5,"../components/Pane-Title.vue":6,"../components/Pane.vue":7}]},{},[8]);
+},{"vue":3,"vue-hot-reload-api":2}]},{},[4]);
