@@ -18,6 +18,7 @@ import Alert from "./components/Alert.vue";
 import Badge from "./components/Badge.vue";
 import Callout from "./components/Callout.vue";
 import Carousel from "./components/Carousel.vue";
+import Dropdown from "./components/Dropdown.vue";
 import Info from "./components/Info.vue";
 import Message from "./components/Message.vue";
 import Pane from "./components/Pane.vue";
@@ -38,6 +39,7 @@ new Vue({
         Badge,
         Callout, Info, Alert, Warning, Success, Message,
         Carousel, Slide, SlideContainer, SlidePrevious, SlideNext,
+        Dropdown,
         Pane, PaneTitle, PaneContent,
     }
 });

@@ -1,7 +1,7 @@
 [Default Components](https://github.com/sirthxalot/vue-foundation-components/milestone/1)
 ------------------------------------------------------------------------------------- 
 
-> v.1.4.6-0006
+> v.1.5.7-0007
 
 * **Feature**: Implement accordion component including an example page. ([#2](https://github.com/sirthxalot/vue-foundation-components/issues/2))
 * **Minor**: Add sub components related to the accordion component. ([#2](https://github.com/sirthxalot/vue-foundation-components/issues/2))
@@ -13,6 +13,8 @@
 * **Minor**: Add sub components related to the callout component. ([#4](https://github.com/sirthxalot/vue-foundation-components/issues/4))
 * **Feature**: Implement carousel component including an example page. ([#6](https://github.com/sirthxalot/vue-foundation-components/issues/6))
 * **Minor**: Add sub components related to the carousel component. ([#6](https://github.com/sirthxalot/vue-foundation-components/issues/6))
+* **Feature**: Implement dropdown component including an example page. ([#7](https://github.com/sirthxalot/vue-foundation-components/issues/7))
+* **Minor**: Updated the components list in `README.md`. ([#7](https://github.com/sirthxalot/vue-foundation-components/issues/7))
 
 
 [Initial Commit](https://github.com/sirthxalot/vue-foundation-components/issues/1)
