@@ -1,7 +1,7 @@
 [Default Components](https://github.com/sirthxalot/vue-foundation-components/milestone/1)
 ------------------------------------------------------------------------------------- 
 
-> v.1.3.5-0005
+> v.1.4.6-0006
 
 * **Feature**: Implement accordion component including an example page. ([#2](https://github.com/sirthxalot/vue-foundation-components/issues/2))
 * **Minor**: Add sub components related to the accordion component. ([#2](https://github.com/sirthxalot/vue-foundation-components/issues/2))
@@ -11,6 +11,8 @@
 * **Fix**: Replace the `closable` attribute of accordion components with `allClosable`. ([#4](https://github.com/sirthxalot/vue-foundation-components/issues/4))
 * **Feature**: Implement callout component including an example page. ([#4](https://github.com/sirthxalot/vue-foundation-components/issues/4))
 * **Minor**: Add sub components related to the callout component. ([#4](https://github.com/sirthxalot/vue-foundation-components/issues/4))
+* **Feature**: Implement carousel component including an example page. ([#6](https://github.com/sirthxalot/vue-foundation-components/issues/6))
+* **Minor**: Add sub components related to the carousel component. ([#6](https://github.com/sirthxalot/vue-foundation-components/issues/6))
 
 
 [Initial Commit](https://github.com/sirthxalot/vue-foundation-components/issues/1)
