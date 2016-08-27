@@ -12,32 +12,61 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css" type="text/css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.2/motion-ui.min.css" type="text/css" rel="stylesheet" />
     <!-- Link to Stylesheets -->
+
 </head>
 <body>
 
 
-<!-- Accordion Component Usage -->
-<accordion closable="true" expand="true">
-    <pane active="">
-        <pane-title>Accordion Title</pane-title>
-        <pane-content>
-            You content goes here ...
-        </pane-content>
-    </pane>
-    <pane>
-        <pane-title>Accordion Title 2</pane-title>
-        <pane-content>
-            You content goes here 2 ...
-        </pane-content>
-    </pane>
-    <pane active="">
-        <pane-title>Accordion Title 3</pane-title>
-        <pane-content>
-            You content goes here 3 ...
-        </pane-content>
-    </pane>
-</accordion>
-<!-- Accordion Component Usage -->
+<!-- Modal Component Usage -->
+<modal label="Open my modal">
+    You can put any Markup in here ...
+</modal>
+
+
+<button class="button success" data-open="custom-modal">Open Custom</button>
+<modal id="custom-modal">Custom Modal</modal>
+
+
+<modal label="Closable Modal" closable="true">
+    This is a closable modal ...
+</modal>
+
+
+<modal label="Tiny Modal" size="tiny">
+    This is a tiny modal ...
+</modal>
+
+<modal label="Small Modal" size="small">
+    This is a small modal ...
+</modal>
+
+<modal label="Large Modal" size="large">
+    This is a large modal ...
+    <button class="close-button" data-close="" aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</modal>
+
+<modal label="Full Modal" size="full" closable="true">
+    This is a full modal ...
+</modal>
+
+
+<modal label="Remove Overlay" overlay="false">
+    No overlay for modals
+</modal>
+
+
+<modal label="Spin-In Modal" animation="spin">
+    This modal is totally spinning
+</modal>
+
+
+<modal label="Accessibility" labelledby="exampleModalHeader1">
+    <h1 id="exampleModalHeader1">Accessibility Modal Example</h1>
+</modal>
+<!-- Modal Component Usage -->
+
 
 <!-- Load Vue and Vue Components -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>

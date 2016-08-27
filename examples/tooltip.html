@@ -12,32 +12,34 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css" type="text/css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.2/motion-ui.min.css" type="text/css" rel="stylesheet" />
     <!-- Link to Stylesheets -->
+
+    <!-- Internal Style -->
+    <style>
+        body {
+            padding-top: 5rem;
+        }
+    </style>
+    <!-- Internal Style -->
 </head>
 <body>
 
 
-<!-- Accordion Component Usage -->
-<accordion closable="true" expand="true">
-    <pane active="">
-        <pane-title>Accordion Title</pane-title>
-        <pane-content>
-            You content goes here ...
-        </pane-content>
-    </pane>
-    <pane>
-        <pane-title>Accordion Title 2</pane-title>
-        <pane-content>
-            You content goes here 2 ...
-        </pane-content>
-    </pane>
-    <pane active="">
-        <pane-title>Accordion Title 3</pane-title>
-        <pane-content>
-            You content goes here 3 ...
-        </pane-content>
-    </pane>
-</accordion>
-<!-- Accordion Component Usage -->
+<!-- Tooltip Component Usage -->
+<p>
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+    <tooltip tip="Tooltips are nifty for displaying extended information for a term or action on a page.">Tooltip</tooltip>
+    magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+    gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+    elitr, sed diam.
+</p>
+
+<tooltip tip="Term definition" open="false">Term</tooltip>
+
+<tooltip tip="Term definition" position="top">Term (Top Position)</tooltip>
+<tooltip tip="Term definition" position="left">Term (Left Position)</tooltip>
+<tooltip tip="Term definition" position="right">Term (Right Position)</tooltip>
+<!-- Tooltip Component Usage -->
+
 
 <!-- Load Vue and Vue Components -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>

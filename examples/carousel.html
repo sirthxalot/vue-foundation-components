@@ -1,0 +1,70 @@
+<html class="no-js" lang="en">
+<head>
+    <!-- Required Meta Tagging for Foundation Sites -->
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Required Meta Tagging for Foundation Sites -->
+
+    <title>Document Title</title>
+
+    <!-- Link to Stylesheets -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css" type="text/css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.2/motion-ui.min.css" type="text/css" rel="stylesheet" />
+    <!-- Link to Stylesheets -->
+</head>
+<body>
+
+
+<!-- Carousel Component Usage -->
+<carousel label="Testing the dummy carousel">
+    <slide-container>
+        <slide-previous></slide-previous>
+        <slide-next></slide-next>
+        <slide>
+            <img class="orbit-image" src="http://foundation.zurb.com/sites/docs/assets/img/orbit/01.jpg" alt="Space">
+            <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
+        </slide>
+        <slide>
+            <img class="orbit-image" src="http://foundation.zurb.com/sites/docs/assets/img/orbit/02.jpg" alt="Space">
+            <figcaption class="orbit-caption">Lets Rocket!</figcaption>
+        </slide>
+        <slide>
+            <img class="orbit-image" src="http://foundation.zurb.com/sites/docs/assets/img/orbit/03.jpg" alt="Space">
+            <figcaption class="orbit-caption">Encapsulating</figcaption>
+        </slide>
+        <slide>
+            <img class="orbit-image" src="http://foundation.zurb.com/sites/docs/assets/img/orbit/04.jpg" alt="Space">
+            <figcaption class="orbit-caption">Outta This World</figcaption>
+        </slide>
+    </slide-container>
+    <nav class="orbit-bullets">
+        <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+        <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+        <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+        <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+    </nav>
+</carousel>
+<!-- Carousel Component Usage -->
+
+
+<!-- Load Vue and Vue Components -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
+<script src="js/foundation.components.min.js"></script>
+<!-- Load Vue and Vue Components -->
+
+<!-- Load jQuery, What Input, Motion-UI, Foundation for Sites -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"
+></script>
+<script src="https://cdn.jsdelivr.net/what-input/2.1.1/what-input.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.2/motion-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.js"></script>
+<script>
+    // Initialize Foundation Components
+    $(document).foundation();
+</script>
+<!-- Load jQuery, What Input, Motion-UI, Foundation for Sites -->
+</body>
+</html>
