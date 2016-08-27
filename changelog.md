@@ -1,7 +1,7 @@
 [Default Components](https://github.com/sirthxalot/vue-foundation-components/milestone/1)
 ------------------------------------------------------------------------------------- 
 
-> v.1.7.11-0009
+> v.1.8.11-0010
 
 * **Feature**: Implement accordion component including an example page. ([#2](https://github.com/sirthxalot/vue-foundation-components/issues/2))
 * **Minor**: Add sub components related to the accordion component. ([#2](https://github.com/sirthxalot/vue-foundation-components/issues/2))
@@ -21,6 +21,7 @@
 * **Minor**: Updated the components list in `README.md`. ([#9](https://github.com/sirthxalot/vue-foundation-components/issues/9))
 * **Fix**: Change the id's of the dropdown components to follow coding structure. ([#9](https://github.com/sirthxalot/vue-foundation-components/issues/9))
 * **Feature**: Implement sticker component including an example page. ([#9](https://github.com/sirthxalot/vue-foundation-components/issues/9))
+* **Feature**: Implement thumbnail component including an example page. ([#10](https://github.com/sirthxalot/vue-foundation-components/issues/10))
 
 
 [Initial Commit](https://github.com/sirthxalot/vue-foundation-components/issues/1)

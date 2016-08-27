@@ -26,8 +26,8 @@ Simple dropdown
 will generate something like the following markup for you:
 
 ```html
-<button class="button" type="button" data-toggle="dropdown-1">Hoverable Dropdown</button>
-<div class="dropdown-pane" id="dropdown-1" data-dropdown data-hover="true" data-hover-pane="true">
+<button class="button" type="button" data-toggle="dropdown-1">Dropdown</button>
+<div class="dropdown-pane" id="dropdown-1" data-dropdown="" data-hover="true" data-hover-pane="true">
   Simple dropdown
 </div>
 ```

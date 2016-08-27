@@ -31,6 +31,7 @@ import SlideNext from "./components/Slide-Next.vue";
 import SlidePrevious from "./components/Slide-Previous.vue";
 import Sticker from "./components/Sticker.vue";
 import Success from "./components/Success.vue";
+import Thumbnail from "./components/Thumbnail.vue";
 import Warning from "./components/Warning.vue";
 
 new Vue({
@@ -44,6 +45,7 @@ new Vue({
         Dropdown,
         Modal,
         Pane, PaneTitle, PaneContent,
-        Sticker
+        Sticker,
+        Thumbnail
     }
 });
