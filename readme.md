@@ -18,19 +18,21 @@ readable way by fresh up the default markup with a more descriptive syntax.
 ## Simple Example
              
 ```html
-<slider start="50" end="200"></slider>
+<dropdown text="DropDown">
+Simple dropdown
+</dropdown>
 ```
 
-will generate the following markup for you:
+will generate something like the following markup for you:
 
 ```html
- <div class="slider" data-slider data-initial-start="50" data-end="200">
-   <span class="slider-handle" data-slider-handle="" role="slider" tabindex="1"></span>
-   <span class="slider-fill" data-slider-fill></span>
-   <input type="hidden">
- </div>
+<button class="button" type="button" data-toggle="dropdown-1">Hoverable Dropdown</button>
+<div class="dropdown-pane" id="dropdown-1" data-dropdown data-hover="true" data-hover-pane="true">
+  Simple dropdown
+</div>
 ```
 
+You will find more examples within the `examples/` directory, so you definitely have to check this out.
 
 ## Components
 
@@ -39,10 +41,7 @@ will generate the following markup for you:
 * [Callout](https://github.com/sirthxalot/vue-foundation-components/wiki/Callout-Component)
 * [Carousel](https://github.com/sirthxalot/vue-foundation-components/wiki/Carousel-Component)
 * [DropDown](https://github.com/sirthxalot/vue-foundation-components/wiki/DropDown-Component)
-* [Menu](https://github.com/sirthxalot/vue-foundation-components/wiki/Menu-Component)
 * [Modal](https://github.com/sirthxalot/vue-foundation-components/wiki/Modal-Component)
-* [Progress Bar](https://github.com/sirthxalot/vue-foundation-components/wiki/Progress-Bar-Component)
-* [Slider](https://github.com/sirthxalot/vue-foundation-components/wiki/Slider-Component)
 * [Sticker](https://github.com/sirthxalot/vue-foundation-components/wiki/Sticker-Component)
 * [Thumbnail](https://github.com/sirthxalot/vue-foundation-components/wiki/Thumbnail-Component)
 * [Tooltip](https://github.com/sirthxalot/vue-foundation-components/wiki/Tooltip-Component)

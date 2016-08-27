@@ -1,7 +1,7 @@
 [Default Components](https://github.com/sirthxalot/vue-foundation-components/milestone/1)
 ------------------------------------------------------------------------------------- 
 
-> v.1.6.9-0008
+> v.1.7.11-0009
 
 * **Feature**: Implement accordion component including an example page. ([#2](https://github.com/sirthxalot/vue-foundation-components/issues/2))
 * **Minor**: Add sub components related to the accordion component. ([#2](https://github.com/sirthxalot/vue-foundation-components/issues/2))
@@ -18,6 +18,9 @@
 * **Fix**: Remove custom css and javascript from gulpfile. ([#8](https://github.com/sirthxalot/vue-foundation-components/issues/8))
 * **Feature**: Implement modal component including an example page. ([#8](https://github.com/sirthxalot/vue-foundation-components/issues/8))
 * **Fix**: Remove not minified javascript since it is not up to date. ([#8](https://github.com/sirthxalot/vue-foundation-components/issues/8))
+* **Minor**: Updated the components list in `README.md`. ([#9](https://github.com/sirthxalot/vue-foundation-components/issues/9))
+* **Fix**: Change the id's of the dropdown components to follow coding structure. ([#9](https://github.com/sirthxalot/vue-foundation-components/issues/9))
+* **Feature**: Implement sticker component including an example page. ([#9](https://github.com/sirthxalot/vue-foundation-components/issues/9))
 
 
 [Initial Commit](https://github.com/sirthxalot/vue-foundation-components/issues/1)

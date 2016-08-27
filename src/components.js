@@ -23,12 +23,13 @@ import Info from "./components/Info.vue";
 import Message from "./components/Message.vue";
 import Modal from "./components/Modal.vue";
 import Pane from "./components/Pane.vue";
+import PaneContent from "./components/Pane-Content.vue";
+import PaneTitle from "./components/Pane-Title.vue";
 import Slide from "./components/Slide.vue";
 import SlideContainer from "./components/Slide-Container.vue";
 import SlideNext from "./components/Slide-Next.vue";
 import SlidePrevious from "./components/Slide-Previous.vue";
-import PaneTitle from "./components/Pane-Title.vue";
-import PaneContent from "./components/Pane-Content.vue";
+import Sticker from "./components/Sticker.vue";
 import Success from "./components/Success.vue";
 import Warning from "./components/Warning.vue";
 
@@ -43,5 +44,6 @@ new Vue({
         Dropdown,
         Modal,
         Pane, PaneTitle, PaneContent,
+        Sticker
     }
 });
