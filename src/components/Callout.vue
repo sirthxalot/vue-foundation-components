@@ -1,8 +1,8 @@
 <template>
-    <div class="callout" :class="[size, type]" :data-closable="closableStyle">
+    <div class="callout" :class="[size, type]" :data-closable="isclosable">
         <slot></slot>
 
-        <button class="close-button" aria-label="Dismiss alert" type="button" data-close="" v-if="closableStyle">
+        <button class="close-button" aria-label="Dismiss Message" type="button" data-close="" v-if="isclosable">
             <span aria-hidden="true">&times;</span>
         </button>
     </div>
@@ -12,7 +12,7 @@
 export default {
     props: ['closable', 'size', 'type'],
     computed: {
-        closableStyle: function () {
+        isclosable: function () {
             if (this.closable == "true")
             {
                 return 'fade-out';

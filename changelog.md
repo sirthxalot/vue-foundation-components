@@ -1,7 +1,7 @@
 [Default Components](https://github.com/sirthxalot/vue-foundation-components/milestone/1)
 ------------------------------------------------------------------------------------- 
 
-> v.1.9.11-0011
+> v.1.9.13-0012
 
 * **Feature**: Implement accordion component including an example page. ([#2](https://github.com/sirthxalot/vue-foundation-components/issues/2))
 * **Minor**: Add sub components related to the accordion component. ([#2](https://github.com/sirthxalot/vue-foundation-components/issues/2))
@@ -23,6 +23,8 @@
 * **Feature**: Implement sticker component including an example page. ([#9](https://github.com/sirthxalot/vue-foundation-components/issues/9))
 * **Feature**: Implement thumbnail component including an example page. ([#10](https://github.com/sirthxalot/vue-foundation-components/issues/10))
 * **Feature**: Implement tooltip component including an example page. ([#11](https://github.com/sirthxalot/vue-foundation-components/issues/11))
+* **Revision**: Small changes for some attributes in order to be more consistent. ([#12](https://github.com/sirthxalot/vue-foundation-components/issues/12))
+* **Minor**: Compile the un-minified version of the components. ([#12](https://github.com/sirthxalot/vue-foundation-components/issues/12))
 
 
 [Initial Commit](https://github.com/sirthxalot/vue-foundation-components/issues/1)

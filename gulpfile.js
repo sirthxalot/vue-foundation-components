@@ -35,8 +35,8 @@ var root = '../../';
 // Type in .min when running Gulp on production and
 // change sourcemaps to true
 
-var min = '.min';
-elixir.config.sourcemaps = true;
+var min = '';
+elixir.config.sourcemaps = false;
 
 
 // Gulp Task

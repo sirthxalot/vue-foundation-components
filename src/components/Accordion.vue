@@ -1,11 +1,30 @@
 <template>
-    <ul class="accordion" data-accordion="" :data-multi-expand="multiexpand" :data-allow-all-closed="allclosable">
-        <slot></slot>
-    </ul>
+    <ul class="accordion"
+        data-accordion=""
+        :data-allow-all-closed="isclosable"
+        :data-multi-expand="isexpandable"
+    ><slot></slot></ul>
 </template>
 
 <script>
 export default {
-    props: ['allclosable', 'multiexpand']
+    props: ['closable', 'expand'],
+
+    computed: {
+        isclosable : function () {
+            if (this.closable && this.closable != 'false')
+            {
+                return 'true';
+            }
+            return "";
+        },
+        isexpandable : function () {
+            if (this.expand && this.expand != 'false')
+            {
+                return 'true';
+            }
+            return "";
+        },
+    }
 };
 </script>

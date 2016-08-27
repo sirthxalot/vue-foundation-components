@@ -5,8 +5,8 @@
          :id="cid"
          data-reveal=""
          :data-overlay="overlay"
-         :data-animation-in="animationIn"
-         :data-animation-out="animationOut"
+         :data-animation-in="animationin"
+         :data-animation-out="animationout"
          :aria-labelledby="labelledby"
     >
         <slot></slot>
@@ -27,14 +27,14 @@ export default {
             }
             return "modal-" + this._uid;
         },
-        animationIn: function () {
+        animationin: function () {
             if (this.animation)
             {
                 return this.animation + '-in';
             }
             return "";
         },
-        animationOut: function () {
+        animationout: function () {
             if (this.animation)
             {
                 return this.animation + '-out';
