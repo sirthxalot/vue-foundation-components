@@ -12,32 +12,41 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css" type="text/css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.2/motion-ui.min.css" type="text/css" rel="stylesheet" />
     <!-- Link to Stylesheets -->
+
+    <!-- Internal Style -->
+    <style>
+        body {
+            padding-top: 5rem;
+        }
+    </style>
+    <!-- Internal Style -->
 </head>
 <body>
 
 
-<!-- Accordion Component Usage -->
-<accordion closable="true" expand="true">
-    <pane active="">
-        <pane-title>Accordion Title</pane-title>
-        <pane-content>
-            You content goes here ...
-        </pane-content>
-    </pane>
-    <pane>
-        <pane-title>Accordion Title 2</pane-title>
-        <pane-content>
-            You content goes here 2 ...
-        </pane-content>
-    </pane>
-    <pane active="">
-        <pane-title>Accordion Title 3</pane-title>
-        <pane-content>
-            You content goes here 3 ...
-        </pane-content>
-    </pane>
-</accordion>
-<!-- Accordion Component Usage -->
+<!-- DropDown Component Usage -->
+<dropdown text="Example form in a dropdown." data-auto-focus="true">
+    <form>
+        <div class="row">
+            <div class="medium-6 columns">
+                <label>Name
+                    <input type="text" placeholder="Kirk, James T.">
+                </label>
+            </div>
+            <div class="medium-6 columns">
+                <label>Rank
+                    <input type="text" placeholder="Captain">
+                </label>
+            </div>
+        </div>
+    </form>
+</dropdown>
+
+<dropdown text="Top DropDown" position="top">I am on the top!</dropdown>
+<dropdown text="Right DropDown" position="right">I am on the right!</dropdown>
+<dropdown text="Left DropDown" position="left">I am on the left!</dropdown>
+<!-- DropDown Component Usage -->
+
 
 <!-- Load Vue and Vue Components -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>

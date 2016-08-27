@@ -10541,30 +10541,89 @@ module.exports = Vue;
 },{"_process":1}],4:[function(require,module,exports){
 "use strict";
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-exports.default = {
-    props: []
-};
-if (module.exports.__esModule) module.exports = module.exports.default
-;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<h1><slot></slot></h1>\n"
-if (module.hot) {(function () {  module.hot.accept()
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), true)
-  if (!hotAPI.compatible) return
-  if (!module.hot.data) {
-    hotAPI.createRecord("_v-47fdb0ba", module.exports)
-  } else {
-    hotAPI.update("_v-47fdb0ba", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
-  }
-})()}
-},{"vue":3,"vue-hot-reload-api":2}],5:[function(require,module,exports){
-"use strict";
+var _Accordion = require("./components/Accordion.vue");
 
-var _Dummy = require("../components/Dummy.vue");
+var _Accordion2 = _interopRequireDefault(_Accordion);
 
-var _Dummy2 = _interopRequireDefault(_Dummy);
+var _Alert = require("./components/Alert.vue");
+
+var _Alert2 = _interopRequireDefault(_Alert);
+
+var _Badge = require("./components/Badge.vue");
+
+var _Badge2 = _interopRequireDefault(_Badge);
+
+var _Callout = require("./components/Callout.vue");
+
+var _Callout2 = _interopRequireDefault(_Callout);
+
+var _Carousel = require("./components/Carousel.vue");
+
+var _Carousel2 = _interopRequireDefault(_Carousel);
+
+var _Dropdown = require("./components/Dropdown.vue");
+
+var _Dropdown2 = _interopRequireDefault(_Dropdown);
+
+var _Info = require("./components/Info.vue");
+
+var _Info2 = _interopRequireDefault(_Info);
+
+var _Message = require("./components/Message.vue");
+
+var _Message2 = _interopRequireDefault(_Message);
+
+var _Modal = require("./components/Modal.vue");
+
+var _Modal2 = _interopRequireDefault(_Modal);
+
+var _Pane = require("./components/Pane.vue");
+
+var _Pane2 = _interopRequireDefault(_Pane);
+
+var _PaneContent = require("./components/Pane-Content.vue");
+
+var _PaneContent2 = _interopRequireDefault(_PaneContent);
+
+var _PaneTitle = require("./components/Pane-Title.vue");
+
+var _PaneTitle2 = _interopRequireDefault(_PaneTitle);
+
+var _Slide = require("./components/Slide.vue");
+
+var _Slide2 = _interopRequireDefault(_Slide);
+
+var _SlideContainer = require("./components/Slide-Container.vue");
+
+var _SlideContainer2 = _interopRequireDefault(_SlideContainer);
+
+var _SlideNext = require("./components/Slide-Next.vue");
+
+var _SlideNext2 = _interopRequireDefault(_SlideNext);
+
+var _SlidePrevious = require("./components/Slide-Previous.vue");
+
+var _SlidePrevious2 = _interopRequireDefault(_SlidePrevious);
+
+var _Sticker = require("./components/Sticker.vue");
+
+var _Sticker2 = _interopRequireDefault(_Sticker);
+
+var _Success = require("./components/Success.vue");
+
+var _Success2 = _interopRequireDefault(_Success);
+
+var _Thumbnail = require("./components/Thumbnail.vue");
+
+var _Thumbnail2 = _interopRequireDefault(_Thumbnail);
+
+var _Tooltip = require("./components/Tooltip.vue");
+
+var _Tooltip2 = _interopRequireDefault(_Tooltip);
+
+var _Warning = require("./components/Warning.vue");
+
+var _Warning2 = _interopRequireDefault(_Warning);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -10572,7 +10631,16 @@ new Vue({
     el: 'body',
 
     components: {
-        Dummy: _Dummy2.default
+        Accordion: _Accordion2.default,
+        Badge: _Badge2.default,
+        Callout: _Callout2.default, Info: _Info2.default, Alert: _Alert2.default, Warning: _Warning2.default, Success: _Success2.default, Message: _Message2.default,
+        Carousel: _Carousel2.default, Slide: _Slide2.default, SlideContainer: _SlideContainer2.default, SlidePrevious: _SlidePrevious2.default, SlideNext: _SlideNext2.default,
+        Dropdown: _Dropdown2.default,
+        Modal: _Modal2.default,
+        Pane: _Pane2.default, PaneTitle: _PaneTitle2.default, PaneContent: _PaneContent2.default,
+        Sticker: _Sticker2.default,
+        Thumbnail: _Thumbnail2.default,
+        Tooltip: _Tooltip2.default
     }
 }); /**
      * Vue Components
@@ -10589,4 +10657,492 @@ new Vue({
      * @copyright (c) 2016, Alexander Bösch - All rights reserved.
      */
 
-},{"../components/Dummy.vue":4}]},{},[5]);
+},{"./components/Accordion.vue":5,"./components/Alert.vue":6,"./components/Badge.vue":7,"./components/Callout.vue":8,"./components/Carousel.vue":9,"./components/Dropdown.vue":10,"./components/Info.vue":11,"./components/Message.vue":12,"./components/Modal.vue":13,"./components/Pane-Content.vue":14,"./components/Pane-Title.vue":15,"./components/Pane.vue":16,"./components/Slide-Container.vue":17,"./components/Slide-Next.vue":18,"./components/Slide-Previous.vue":19,"./components/Slide.vue":20,"./components/Sticker.vue":21,"./components/Success.vue":22,"./components/Thumbnail.vue":23,"./components/Tooltip.vue":24,"./components/Warning.vue":25}],5:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
+    props: ['closable', 'expand'],
+
+    computed: {
+        isclosable: function isclosable() {
+            if (this.closable && this.closable != 'false') {
+                return 'true';
+            }
+            return "";
+        },
+        isexpandable: function isexpandable() {
+            if (this.expand && this.expand != 'false') {
+                return 'true';
+            }
+            return "";
+        }
+    }
+};
+if (module.exports.__esModule) module.exports = module.exports.default
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<ul class=\"accordion\" data-accordion=\"\" :data-allow-all-closed=\"isclosable\" :data-multi-expand=\"isexpandable\"><slot></slot></ul>\n"
+if (module.hot) {(function () {  module.hot.accept()
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  if (!module.hot.data) {
+    hotAPI.createRecord("_v-c070574c", module.exports)
+  } else {
+    hotAPI.update("_v-c070574c", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+  }
+})()}
+},{"vue":3,"vue-hot-reload-api":2}],6:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
+    props: ['closable', 'size'],
+    computed: {
+        isclosable: function isclosable() {
+            if (this.closable == "true") {
+                return 'fade-out';
+            }
+            return "";
+        }
+    }
+};
+if (module.exports.__esModule) module.exports = module.exports.default
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div class=\"callout alert\" :class=\"size\" :data-closable=\"isclosable\">\n    <slot></slot>\n\n    <button class=\"close-button\" aria-label=\"Dismiss Alert\" type=\"button\" data-close=\"\" v-if=\"isclosable\">\n        <span aria-hidden=\"true\">×</span>\n    </button>\n</div>\n"
+if (module.hot) {(function () {  module.hot.accept()
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  if (!module.hot.data) {
+    hotAPI.createRecord("_v-4555bb6e", module.exports)
+  } else {
+    hotAPI.update("_v-4555bb6e", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+  }
+})()}
+},{"vue":3,"vue-hot-reload-api":2}],7:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
+    props: ['color']
+};
+if (module.exports.__esModule) module.exports = module.exports.default
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<span class=\"badge\" :class=\"color\">\n    <slot></slot>\n</span>\n"
+if (module.hot) {(function () {  module.hot.accept()
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  if (!module.hot.data) {
+    hotAPI.createRecord("_v-1a6e5235", module.exports)
+  } else {
+    hotAPI.update("_v-1a6e5235", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+  }
+})()}
+},{"vue":3,"vue-hot-reload-api":2}],8:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
+    props: ['closable', 'size', 'type'],
+    computed: {
+        isclosable: function isclosable() {
+            if (this.closable == "true") {
+                return 'fade-out';
+            }
+            return "";
+        }
+    }
+};
+if (module.exports.__esModule) module.exports = module.exports.default
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div class=\"callout\" :class=\"[size, type]\" :data-closable=\"isclosable\">\n    <slot></slot>\n\n    <button class=\"close-button\" aria-label=\"Dismiss Message\" type=\"button\" data-close=\"\" v-if=\"isclosable\">\n        <span aria-hidden=\"true\">×</span>\n    </button>\n</div>\n"
+if (module.hot) {(function () {  module.hot.accept()
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  if (!module.hot.data) {
+    hotAPI.createRecord("_v-007ae1c2", module.exports)
+  } else {
+    hotAPI.update("_v-007ae1c2", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+  }
+})()}
+},{"vue":3,"vue-hot-reload-api":2}],9:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
+    props: ['label']
+};
+if (module.exports.__esModule) module.exports = module.exports.default
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div class=\"orbit\" role=\"region\" :aria-label=\"label\" data-orbit=\"\">\n    <slot></slot>\n</div>\n"
+if (module.hot) {(function () {  module.hot.accept()
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  if (!module.hot.data) {
+    hotAPI.createRecord("_v-74922c3e", module.exports)
+  } else {
+    hotAPI.update("_v-74922c3e", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+  }
+})()}
+},{"vue":3,"vue-hot-reload-api":2}],10:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
+    props: ['text', 'position'],
+    computed: {
+        cid: function cid() {
+            return "dropdown-" + this._uid;
+        }
+    }
+};
+if (module.exports.__esModule) module.exports = module.exports.default
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<button class=\"button\" type=\"button\" :data-toggle=\"cid\">{{ text }}</button>\n<div class=\"dropdown-pane\" :class=\"position\" :id=\"cid\" data-dropdown=\"\">\n    <slot></slot>\n</div>\n"
+if (module.hot) {(function () {  module.hot.accept()
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  if (!module.hot.data) {
+    hotAPI.createRecord("_v-7c224e6f", module.exports)
+  } else {
+    hotAPI.update("_v-7c224e6f", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+  }
+})()}
+},{"vue":3,"vue-hot-reload-api":2}],11:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
+    props: ['closable', 'size'],
+    computed: {
+        isclosable: function isclosable() {
+            if (this.closable == "true") {
+                return 'fade-out';
+            }
+            return "";
+        }
+    }
+};
+if (module.exports.__esModule) module.exports = module.exports.default
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div class=\"callout info\" :class=\"size\" :data-closable=\"isclosable\">\n    <slot></slot>\n\n    <button class=\"close-button\" aria-label=\"Dismiss Info Message\" type=\"button\" data-close=\"\" v-if=\"isclosable\">\n        <span aria-hidden=\"true\">×</span>\n    </button>\n</div>\n"
+if (module.hot) {(function () {  module.hot.accept()
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  if (!module.hot.data) {
+    hotAPI.createRecord("_v-f99828e8", module.exports)
+  } else {
+    hotAPI.update("_v-f99828e8", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+  }
+})()}
+},{"vue":3,"vue-hot-reload-api":2}],12:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
+    props: ['closable', 'size'],
+    computed: {
+        isclosable: function isclosable() {
+            if (this.closable == "true") {
+                return 'fade-out';
+            }
+            return "";
+        }
+    }
+};
+if (module.exports.__esModule) module.exports = module.exports.default
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div class=\"callout\" :class=\"size\" :data-closable=\"isclosable\">\n    <slot></slot>\n\n    <button class=\"close-button\" aria-label=\"Dismiss alert\" type=\"button\" data-close=\"\" v-if=\"isclosable\">\n        <span aria-hidden=\"true\">×</span>\n    </button>\n</div>\n"
+if (module.hot) {(function () {  module.hot.accept()
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  if (!module.hot.data) {
+    hotAPI.createRecord("_v-eb6f23ce", module.exports)
+  } else {
+    hotAPI.update("_v-eb6f23ce", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+  }
+})()}
+},{"vue":3,"vue-hot-reload-api":2}],13:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
+    props: ['labelledby', 'animation', 'closable', 'label', 'size', 'id', 'overlay'],
+    computed: {
+        cid: function cid() {
+            if (this.id) {
+                return this.id;
+            }
+            return "modal-" + this._uid;
+        },
+        animationin: function animationin() {
+            if (this.animation) {
+                return this.animation + '-in';
+            }
+            return "";
+        },
+        animationout: function animationout() {
+            if (this.animation) {
+                return this.animation + '-out';
+            }
+            return "";
+        }
+    }
+};
+if (module.exports.__esModule) module.exports = module.exports.default
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<button class=\"button modal--open\" :data-open=\"cid\" v-if=\"label\">{{ label }}</button>\n<div class=\"reveal\" :class=\"size\" :id=\"cid\" data-reveal=\"\" :data-overlay=\"overlay\" :data-animation-in=\"animationin\" :data-animation-out=\"animationout\" :aria-labelledby=\"labelledby\">\n    <slot></slot>\n    <button class=\"close-button\" data-close=\"\" aria-label=\"Close Modal\" type=\"button\" v-if=\"closable\">\n        <span aria-hidden=\"true\">×</span>\n    </button>\n</div>\n"
+if (module.hot) {(function () {  module.hot.accept()
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  if (!module.hot.data) {
+    hotAPI.createRecord("_v-1dd51c3f", module.exports)
+  } else {
+    hotAPI.update("_v-1dd51c3f", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+  }
+})()}
+},{"vue":3,"vue-hot-reload-api":2}],14:[function(require,module,exports){
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div class=\"accordion-content\" data-tab-content=\"\">\n    <slot></slot>\n</div>\n"
+if (module.hot) {(function () {  module.hot.accept()
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  if (!module.hot.data) {
+    hotAPI.createRecord("_v-5ea878d2", module.exports)
+  } else {
+    hotAPI.update("_v-5ea878d2", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+  }
+})()}
+},{"vue":3,"vue-hot-reload-api":2}],15:[function(require,module,exports){
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<a href=\"#\" class=\"accordion-title\">\n    <slot></slot>\n</a>\n"
+if (module.hot) {(function () {  module.hot.accept()
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  if (!module.hot.data) {
+    hotAPI.createRecord("_v-27c7fb71", module.exports)
+  } else {
+    hotAPI.update("_v-27c7fb71", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+  }
+})()}
+},{"vue":3,"vue-hot-reload-api":2}],16:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
+    props: ['active'],
+    computed: {
+        isactive: function isactive() {
+            if (this.active == "") {
+                return 'is-active';
+            }
+            return "";
+        }
+    }
+};
+if (module.exports.__esModule) module.exports = module.exports.default
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<li class=\"accordion-item\" :class=\"isactive\" data-accordion-item=\"\">\n    <slot></slot>\n</li>\n"
+if (module.hot) {(function () {  module.hot.accept()
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  if (!module.hot.data) {
+    hotAPI.createRecord("_v-90760574", module.exports)
+  } else {
+    hotAPI.update("_v-90760574", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+  }
+})()}
+},{"vue":3,"vue-hot-reload-api":2}],17:[function(require,module,exports){
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<ul class=\"orbit-container\">\n    <slot></slot>\n</ul>\n"
+if (module.hot) {(function () {  module.hot.accept()
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  if (!module.hot.data) {
+    hotAPI.createRecord("_v-16d6e857", module.exports)
+  } else {
+    hotAPI.update("_v-16d6e857", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+  }
+})()}
+},{"vue":3,"vue-hot-reload-api":2}],18:[function(require,module,exports){
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<button class=\"orbit-next\"><span class=\"show-for-sr\">Next Slide</span> ▶︎</button>\n"
+if (module.hot) {(function () {  module.hot.accept()
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  if (!module.hot.data) {
+    hotAPI.createRecord("_v-3259db8d", module.exports)
+  } else {
+    hotAPI.update("_v-3259db8d", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+  }
+})()}
+},{"vue":3,"vue-hot-reload-api":2}],19:[function(require,module,exports){
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<button class=\"orbit-previous\"><span class=\"show-for-sr\">Previous Slide</span> ◀︎</button>\n"
+if (module.hot) {(function () {  module.hot.accept()
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  if (!module.hot.data) {
+    hotAPI.createRecord("_v-cd7a4ede", module.exports)
+  } else {
+    hotAPI.update("_v-cd7a4ede", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+  }
+})()}
+},{"vue":3,"vue-hot-reload-api":2}],20:[function(require,module,exports){
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<li class=\"orbit-slide\" :class.once=\"is-active\">\n    <slot></slot>\n</li>\n"
+if (module.hot) {(function () {  module.hot.accept()
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  if (!module.hot.data) {
+    hotAPI.createRecord("_v-6d073d43", module.exports)
+  } else {
+    hotAPI.update("_v-6d073d43", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+  }
+})()}
+},{"vue":3,"vue-hot-reload-api":2}],21:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
+    props: ['color', 'description'],
+    computed: {
+        cid: function cid() {
+            return "sticker-" + this._uid;
+        }
+    }
+};
+if (module.exports.__esModule) module.exports = module.exports.default
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<span class=\"show-for-sr\" :aria-describedby=\"cid\" v-if=\"description\">{{ description }}</span>\n\n<span class=\"label\" :id=\"cid\" :class=\"color\">\n    <slot></slot>\n</span>\n"
+if (module.hot) {(function () {  module.hot.accept()
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  if (!module.hot.data) {
+    hotAPI.createRecord("_v-1d7eec4f", module.exports)
+  } else {
+    hotAPI.update("_v-1d7eec4f", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+  }
+})()}
+},{"vue":3,"vue-hot-reload-api":2}],22:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
+    props: ['closable', 'size'],
+    computed: {
+        isclosable: function isclosable() {
+            if (this.closable == "true") {
+                return 'fade-out';
+            }
+            return "";
+        }
+    }
+};
+if (module.exports.__esModule) module.exports = module.exports.default
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div class=\"callout success\" :class=\"size\" :data-closable=\"isclosable\">\n    <slot></slot>\n\n    <button class=\"close-button\" aria-label=\"Dismiss alert\" type=\"button\" data-close=\"\" v-if=\"isclosable\">\n        <span aria-hidden=\"true\">×</span>\n    </button>\n</div>\n"
+if (module.hot) {(function () {  module.hot.accept()
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  if (!module.hot.data) {
+    hotAPI.createRecord("_v-72ba5015", module.exports)
+  } else {
+    hotAPI.update("_v-72ba5015", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+  }
+})()}
+},{"vue":3,"vue-hot-reload-api":2}],23:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
+    props: ['alt', 'src']
+};
+if (module.exports.__esModule) module.exports = module.exports.default
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<img class=\"thumbnail\" :src=\"src\" :alt=\"alt\">\n"
+if (module.hot) {(function () {  module.hot.accept()
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  if (!module.hot.data) {
+    hotAPI.createRecord("_v-2274edfe", module.exports)
+  } else {
+    hotAPI.update("_v-2274edfe", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+  }
+})()}
+},{"vue":3,"vue-hot-reload-api":2}],24:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
+    props: ['tip', 'open', 'position']
+};
+if (module.exports.__esModule) module.exports = module.exports.default
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<span aria-haspopup=\"true\" class=\"has-tip\" :class=\"position\" data-disable-hover=\"false\" data-tooltip=\"\" :tabindex=\"_uid\" :title=\"tip\" :data-click-open=\"open\"><slot></slot></span>\n"
+if (module.hot) {(function () {  module.hot.accept()
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  if (!module.hot.data) {
+    hotAPI.createRecord("_v-1f6e3fd6", module.exports)
+  } else {
+    hotAPI.update("_v-1f6e3fd6", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+  }
+})()}
+},{"vue":3,"vue-hot-reload-api":2}],25:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = {
+    props: ['closable', 'size'],
+    computed: {
+        isclosable: function isclosable() {
+            if (this.closable == "true") {
+                return 'fade-out';
+            }
+            return "";
+        }
+    }
+};
+if (module.exports.__esModule) module.exports = module.exports.default
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div class=\"callout warning\" :class=\"size\" :data-closable=\"isclosable\">\n    <slot></slot>\n\n    <button class=\"close-button\" aria-label=\"Dismiss alert\" type=\"button\" data-close=\"\" v-if=\"isclosable\">\n        <span aria-hidden=\"true\">×</span>\n    </button>\n</div>\n"
+if (module.hot) {(function () {  module.hot.accept()
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  if (!module.hot.data) {
+    hotAPI.createRecord("_v-bcb169a4", module.exports)
+  } else {
+    hotAPI.update("_v-bcb169a4", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+  }
+})()}
+},{"vue":3,"vue-hot-reload-api":2}]},{},[4]);
