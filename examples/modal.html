@@ -1,0 +1,90 @@
+<html class="no-js" lang="en">
+<head>
+    <!-- Required Meta Tagging for Foundation Sites -->
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Required Meta Tagging for Foundation Sites -->
+
+    <title>Document Title</title>
+
+    <!-- Link to Stylesheets -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css" type="text/css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.2/motion-ui.min.css" type="text/css" rel="stylesheet" />
+    <!-- Link to Stylesheets -->
+
+</head>
+<body>
+
+
+<!-- Modal Component Usage -->
+<modal label="Open my modal">
+    You can put any Markup in here ...
+</modal>
+
+
+<button class="button success" data-open="custom-modal">Open Custom</button>
+<modal id="custom-modal">Custom Modal</modal>
+
+
+<modal label="Closable Modal" closable="true">
+    This is a closable modal ...
+</modal>
+
+
+<modal label="Tiny Modal" size="tiny">
+    This is a tiny modal ...
+</modal>
+
+<modal label="Small Modal" size="small">
+    This is a small modal ...
+</modal>
+
+<modal label="Large Modal" size="large">
+    This is a large modal ...
+    <button class="close-button" data-close="" aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</modal>
+
+<modal label="Full Modal" size="full" closable="true">
+    This is a full modal ...
+</modal>
+
+
+<modal label="Remove Overlay" overlay="false">
+    No overlay for modals
+</modal>
+
+
+<modal label="Spin-In Modal" animation="spin">
+    This modal is totally spinning
+</modal>
+
+
+<modal label="Accessibility" labelledby="exampleModalHeader1">
+    <h1 id="exampleModalHeader1">Accessibility Modal Example</h1>
+</modal>
+<!-- Modal Component Usage -->
+
+
+<!-- Load Vue and Vue Components -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
+<script src="js/foundation.components.min.js"></script>
+<!-- Load Vue and Vue Components -->
+
+<!-- Load jQuery, What Input, Motion-UI, Foundation for Sites -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"
+></script>
+<script src="https://cdn.jsdelivr.net/what-input/2.1.1/what-input.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.2/motion-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.js"></script>
+<script>
+    // Initialize Foundation Components
+    $(document).foundation();
+</script>
+<!-- Load jQuery, What Input, Motion-UI, Foundation for Sites -->
+</body>
+</html>

@@ -46,8 +46,6 @@ elixir(function(mix) {
     mix.browserify('components.js', 'dist/foundation.components' + min + '.js');
 
     // Copy assets into example directory
-    mix.copy('dist/css/common.min.css', 'examples/css/common.min.css');
-    mix.copy('dist/js/common.min.js', 'examples/js/common.min.js');
     mix.copy('dist/foundation.components.min.js', 'examples/js/foundation.components.min.js');
 
 });

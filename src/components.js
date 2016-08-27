@@ -21,6 +21,7 @@ import Carousel from "./components/Carousel.vue";
 import Dropdown from "./components/Dropdown.vue";
 import Info from "./components/Info.vue";
 import Message from "./components/Message.vue";
+import Modal from "./components/Modal.vue";
 import Pane from "./components/Pane.vue";
 import Slide from "./components/Slide.vue";
 import SlideContainer from "./components/Slide-Container.vue";
@@ -40,6 +41,7 @@ new Vue({
         Callout, Info, Alert, Warning, Success, Message,
         Carousel, Slide, SlideContainer, SlidePrevious, SlideNext,
         Dropdown,
+        Modal,
         Pane, PaneTitle, PaneContent,
     }
 });
