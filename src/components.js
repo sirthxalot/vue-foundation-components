@@ -32,6 +32,7 @@ import SlidePrevious from "./components/Slide-Previous.vue";
 import Sticker from "./components/Sticker.vue";
 import Success from "./components/Success.vue";
 import Thumbnail from "./components/Thumbnail.vue";
+import Tooltip from "./components/Tooltip.vue";
 import Warning from "./components/Warning.vue";
 
 new Vue({
@@ -46,6 +47,7 @@ new Vue({
         Modal,
         Pane, PaneTitle, PaneContent,
         Sticker,
-        Thumbnail
+        Thumbnail,
+        Tooltip
     }
 });
