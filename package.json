@@ -1,12 +1,33 @@
 {
-  "private": true,
+  "name": "vue-foundation-components",
+  "version": "1.10.15",
+  "description": "Write your code in a more readable way, using the descriptive syntax of Vue-Foundation-Components.",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sirthxalot/vue-foundation-components.git"
+  },
+  "keywords": [
+    "vue",
+    "foundation",
+    "zurb",
+    "sirthxalot",
+    "component"
+  ],
+  "author": "Alexander Bösch <sirthxalot.dev@gmail.com> (http://sirthxalot.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sirthxalot/vue-foundation-components/issues"
+  },
+  "homepage": "https://github.com/sirthxalot/vue-foundation-components",
+  "main": "dist/foundation.components.js",
   "scripts": {
-    "prod": "gulp --production",
-    "dev":  "gulp watch"
+    "production": "gulp --production",
+    "development": "gulp watch",
+    "prepublish": "npm run production"
   },
   "devDependencies": {
-    "gulp":                   "^3.9.1",
-    "laravel-elixir":         "^5.0.0",
-    "laravel-elixir-vueify":  "^1.0.3"
+    "gulp": "^3.9.1",
+    "laravel-elixir": "^5.0.0",
+    "laravel-elixir-vueify": "^1.0.3"
   }
 }

@@ -10,7 +10,7 @@
  *
  * @package   Src\Js
  * @author    Alexander Bösch - <sirthxalot.dev@gmail.com>
- * @copyright (c) 2016, Alexander Bösch - All rights reserved.
+ * @copyright (c) 2016-2017, Alexander Bösch - All rights reserved.
  */
 
 import Accordion from "./components/Accordion.vue";
