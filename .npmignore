@@ -4,6 +4,7 @@
 # @see https://docs.npmjs.com/misc/developers#keeping-files-out-of-your-package
 #==========================================================================
 
+.idea/
 src/
 examples/
 
@@ -12,3 +13,4 @@ examples/
 
 changelog.md
 contributing.md
+readme.md

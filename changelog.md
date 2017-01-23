@@ -1,11 +1,12 @@
 [NPM Support](https://github.com/sirthxalot/vue-foundation-components/issues/13)
 -------------------------------------------------------------------------------------
 
-> v.1.10.15-0013
+> v.1.10.16-0013
 
 * **Feature**: Update `packag.json` in order to allow for installation from NPM. ([#13](https://github.com/sirthxalot/vue-foundation-components/issues/13))
 * **Minor**: Update copyright from 2016 to 2016-2017. ([#13](https://github.com/sirthxalot/vue-foundation-components/issues/13))
 * **Minor**: Update the `readme.md` with the latest changes. ([#13](https://github.com/sirthxalot/vue-foundation-components/issues/13))
+* **Fix**: Ignore PhpStorm folder for npm package.
 
 
 [Default Components](https://github.com/sirthxalot/vue-foundation-components/milestone/1)
