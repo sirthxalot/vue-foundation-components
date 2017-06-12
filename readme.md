@@ -1,5 +1,5 @@
-[Vue-Foundation-Components](https://github.com/sirthxalot/vue-foundation-components)
-=====================================================================================
+[Vue-Foundation-Components](https://github.com/sirthxalot/vue-foundation-components) (DEPRECATED)
+=================================================================================================
 
 [![Author: Alexander Bösch](https://img.shields.io/badge/author-alexander%20b%C3%B6sch-242424.svg)](https://github.com/sirthxalot)
 ![Category: Vue Component](https://img.shields.io/badge/category-vue--component-blue.svg)
@@ -13,6 +13,10 @@ frontend framework. They allow you to use the Foundation Framework in a even
 handier way by using the Foundation terminology directly in your markup. Write
 your code in a more readable way by fresh up the default markup with a more
 descriptive syntax.
+
+> **Support Cancelled**: Hi folks! I would like to inform you that the support for this package has been cancelled. This doesn't mean that I am going to remove the repository and start ignoring your issues - no. But I will stop contributing and extending this package.
+
+> **Reason**: First of all this package isn't realy that what it promises. A real Vue component will not use jQuery or the Foundation components, but I didn't find the time to do this the correct way. I am still in love with the Foundation frontend framework, but I would like to start my own thing, called [Alfred](https://github.com/sirthxalot/alfred).
 
 ## Simple Example
              
