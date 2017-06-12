@@ -1,4 +1,4 @@
-[Vue-Foundation-Components](https://github.com/sirthxalot/vue-foundation-components) (DEPRECATED)
+[Vue-Foundation-Components](https://github.com/sirthxalot/vue-foundation-components) (abandoned)
 =================================================================================================
 
 [![Author: Alexander Bösch](https://img.shields.io/badge/author-alexander%20b%C3%B6sch-242424.svg)](https://github.com/sirthxalot)
